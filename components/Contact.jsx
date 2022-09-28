@@ -78,8 +78,7 @@ const Contact = () => {
                 <img
                   src="https://i.ibb.co/nPhn4NL/email-g49992216e-1920.jpg"
                   alt=""
-                  width="200px"
-                  height="200px"
+                  className="w-full"
                 />
               </div>
               <div>
