@@ -13,7 +13,7 @@ const Main = () => {
             LET'S BUILD SOMETHING GREAT TOGETHER
           </p>
           <h1 className='py-4 text-gray-700'>
-            Hi, I'm <span className='text-[#5651e5]'> Matias</span>
+            Hi, I'm <span className='text-[#5f55af]'> Matias</span>
           </h1>
           <h1 className='py-2 text-gray-700'>A Full-Stack Web Developer</h1>
           <p className='py-4 text-gray-600 sm:max-w-[70%] m-auto'>
@@ -43,11 +43,10 @@ const Main = () => {
                 <AiOutlineMail />
               </div>
             </Link>
-            <Link href='/resume'>
+  
               <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                <BsFillPersonLinesFill />
+              <a href='https://docs.google.com/document/d/1X9bACvsztXNFW24-kp5RjKTOsNAXmDLnJLD6jley1wE/edit?usp=sharing' target='_blank'><BsFillPersonLinesFill /></a> 
               </div>
-            </Link>
           </div>
         </div>
       </div>
