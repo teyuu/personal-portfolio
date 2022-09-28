@@ -1,11 +1,68 @@
-import React from "react";
+import React, {useState} from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi';
 import Link from "next/link";
+import axios from 'axios';
 
 const Contact = () => {
+  const [status, setStatus] = useState({
+    submitted: false,
+    submitting: false,
+    info: { error: false, msg: null },
+  });
+  const [inputs, setInputs] = useState({
+    email: '',
+    message: '',
+  });
+  const handleServerResponse = (ok, msg) => {
+    if (ok) {
+      setStatus({
+        submitted: true,
+        submitting: false,
+        info: { error: false, msg: msg },
+      });
+      setInputs({
+        email: '',
+        message: '',
+      });
+    } else {
+      setStatus({
+        info: { error: true, msg: msg },
+      });
+    }
+  };
+  const handleOnChange = (e) => {
+    e.persist();
+    setInputs((prev) => ({
+      ...prev,
+      [e.target.id]: e.target.value,
+    }));
+    setStatus({
+      submitted: false,
+      submitting: false,
+      info: { error: false, msg: null },
+    });
+  };
+  const handleOnSubmit = (e) => {
+    e.preventDefault();
+    setStatus((prevStatus) => ({ ...prevStatus, submitting: true }));
+    axios({
+      method: 'POST',
+      url: 'https://formspree.io/f/xvoyaewy',
+      data: inputs,
+    })
+      .then((response) => {
+        handleServerResponse(
+          true,
+          'Thank you, your message has been submitted.',
+        );
+      })
+      .catch((error) => {
+        handleServerResponse(false, error.response.data.error);
+      });
+  };
   return (
     <div id="contact" className="w-full lg:h-screen">
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
@@ -68,7 +125,7 @@ const Contact = () => {
           {/* right */}
           <div className="col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4">
             <div className="p-4">
-              <form>
+              <form  onSubmit={handleOnSubmit}>
                 <div className="grid md:grid-cols-2 gap-4 w-full py-2">
                   <div className="flex flex-col">
                     <label className="uppercase text-sm py-2">Name</label>
@@ -88,10 +145,15 @@ const Contact = () => {
                   </div>
                 </div>
                 <div className="flex flex-col py-2">
-                  <label className="uppercase text-sm py-2">Email</label>
+                  <label htmlFor="email" className="uppercase text-sm py-2">Email</label>
                   <input
                       className="border-2 rounded-lg p-3 flex border-gray-300"
                       type="email"
+                      id="email"
+                      name="_replyto"
+                      onChange={handleOnChange}
+                      required
+                      value={inputs.email}
                     />
                 </div>
                 <div className="flex flex-col py-2">
@@ -102,11 +164,26 @@ const Contact = () => {
                     />
                 </div>
                 <div className="flex flex-col py-2">
-                  <label className="uppercase text-sm py-2">Message</label>
-                  <textarea className="border-2 rounded-lg p-3 border-gray-300" rows='11'></textarea>
+                  <label  htmlFor="message" className="uppercase text-sm py-2">Message</label>
+                  <textarea 
+                  className="border-2 rounded-lg p-3 border-gray-300" rows='11'
+                  id="message"
+                  name="message"
+                  onChange={handleOnChange}
+                  required
+                  value={inputs.message}/>
                 </div>
-                <button className="w-full p-4 text-gray-100 mt-4">Send Message</button>
+                <button className="w-full p-4 text-[#5f55af] mt-4 "type="submit" disabled={status.submitting}>
+          {!status.submitting
+            ? !status.submitted
+              ? 'Submit'
+              : 'Submitted'
+            : 'Submitting...'}
+        </button>
               </form>
+              {status.info.error && (
+        <div className="error">Error: {status.info.msg}</div>
+      )}
             </div>
           </div>
         </div>
