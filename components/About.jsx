@@ -9,8 +9,8 @@ const About = () => {
           <p className='uppercase text-xl tracking-widest text-[#5651e5] '>About</p>
           <h2 className='py-4'>Who I am</h2>
           <p className='py-2 text-gray-600'>My first steps in programming were taking some web development courses and doing small projects.</p>
-          <p className='py-2 text-gray-600'>After a while I decided to start my career as a Full Stack developer at Henry's bootcamp, where for 5 months with a lot of effort and dedication I learned different technologies, worked as a team, constantly paired programming and carried out projects in which you can see their fruits.</p>
-          <p className='py-2 text-gray-600'>Im still looking to grow professionally, either learning new technologies or being part of projects that are challenging.</p>
+          <p className='py-2 text-gray-600'>After a while I decided to start my career as a Full Stack developer at Henry&#39;s bootcamp, where for 5 months with a lot of effort and dedication I learned different technologies, worked as a team, constantly paired programming and carried out projects in which you can see their fruits.</p>
+          <p className='py-2 text-gray-600'>I&#39;m still looking to grow professionally, either learning new technologies or being part of projects that are challenging.</p>
           <Link href='/#projects'>
           <p className='py-2 text-gray-600 underline cursor-pointer'>Check out some of my last proyects</p>
           </Link>
