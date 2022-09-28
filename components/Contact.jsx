@@ -59,7 +59,7 @@ const Contact = () => {
                   </Link>
  
                     <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                    <a href='https://docs.google.com/document/d/1X9bACvsztXNFW24-kp5RjKTOsNAXmDLnJLD6jley1wE/edit?usp=sharing' target='_blank'><BsFillPersonLinesFill /></a>
+                    <a href='https://docs.google.com/document/d/1X9bACvsztXNFW24-kp5RjKTOsNAXmDLnJLD6jley1wE/edit?usp=sharing' target='_blank'  rel="noopener noreferrer"><BsFillPersonLinesFill /></a>
                     </div>
 
                 </div>
