@@ -26,7 +26,7 @@ const coinplus = () => {
         <div className="col-span-4">
           <h2>Overview</h2>
           <p className="py-5 px-2">
-          It's a SPA that offers exchange services for all the cryptocurrencies of the Ethereum network. You can convert dollars into cryptocurrencies, cryptocurrencies into other cryptocurrencies, and cryptocurrencies back into dollars.
+          It&#39;s a SPA that offers exchange services for all the cryptocurrencies of the Ethereum network. You can convert dollars into cryptocurrencies, cryptocurrencies into other cryptocurrencies, and cryptocurrencies back into dollars.
           </p>
           <a
             href="https://github.com/teyuu/CoinPlus"
