@@ -12,51 +12,51 @@ const Skills = () => {
         {/* Grid container */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <IndividualSkill 
-            img={'/../public/assets/skills/html.png'}
+            imagen={'https://i.ibb.co/z8Rj5RP/html.png'}
             title={'HTML'}
             />
              <IndividualSkill 
-            img={'/../public/assets/skills/css.png'}
+            imagen={'https://i.ibb.co/80pK0p0/css.png1'}
             title={'CSS'}
             />
             <IndividualSkill 
-            img={'/../public/assets/skills/tailwind.png'}
+            imagen={'https://i.ibb.co/QfdFLG3/tailwind.png'}
             title={'Tailwind'}
             />
             <IndividualSkill 
-            img={'/../public/assets/skills/bootstrap.png'}
+            imagen={'https://i.ibb.co/vkJRM4P/bootstrap.png'}
             title={'Bootstrap'}
             />
              <IndividualSkill 
-            img={'/../public/assets/skills/javascript.png'}
+            imagen={'https://i.ibb.co/375t6KM/javascript.png'}
             title={'Javascript'}
             />
             <IndividualSkill 
-            img={'/../public/assets/skills/react.png'}
+            imagen={'https://i.ibb.co/CBwzsWH/react.png'}
             title={'React'}
             />
             <IndividualSkill 
-            img={'/../public/assets/skills/nextjs.png'}
+            imagen={'https://i.ibb.co/x788Dgh/nextjs.png'}
             title={'NextJS'}
             />
             <IndividualSkill 
-            img={'/../public/assets/skills/node.png'}
+            imagen={'https://i.ibb.co/PFJJfMp/node.png'}
             title={'NodeJS'}
             />
             <IndividualSkill 
-            img={'/../public/assets/skills/express.png'}
+            imagen={'https://i.ibb.co/rkg439x/express.png'}
             title={'Express'}
             />
             <IndividualSkill 
-            img={'/../public/assets/skills/postgre.png'}
+            imagen={'https://i.ibb.co/xCPFRBN/postgre.png'}
             title={'PostgreSQL'}
             />
              <IndividualSkill 
-            img={'/../public/assets/skills/mongo.png'}
+            imagen={'https://i.ibb.co/fHk70Z3/mongo.png'}
             title={'MongoDB'}
             />
             <IndividualSkill 
-            img={'/../public/assets/skills/github1.png'}
+            imagen={'https://i.ibb.co/fQ2jnrG/github1.png'}
             title={'GitHub'}
             />
         </div>

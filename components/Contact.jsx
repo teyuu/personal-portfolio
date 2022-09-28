@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsFillPersonLinesFill } from "react-icons/bs";
@@ -19,8 +18,8 @@ const Contact = () => {
           <div className="col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4 ">
             <div className="lg:p-4 h-full grid ">
               <div className="rounded-xl hover:scale-105 ease-in duration-300">
-                <Image
-                  src="/../public/assets/contact.jpg"
+                <img
+                  src="https://i.ibb.co/b355Swm/contact.jpg"
                   alt=""
                   width="200px"
                   height="200px"
