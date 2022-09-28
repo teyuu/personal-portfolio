@@ -10,6 +10,7 @@ const IndividualSkill = ({img, title}) => {
                   src={img}
                   width={"64px"}
                   height={'64px'}
+                  alt=""
                 />
               </div>
               <div className="flex flex-col items-center justify-center">
