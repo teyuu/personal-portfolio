@@ -76,7 +76,7 @@ const Contact = () => {
             <div className="lg:p-4 h-full grid ">
               <div className="rounded-xl hover:scale-105 ease-in duration-300">
                 <img
-                  src="https://i.ibb.co/b355Swm/contact.jpg"
+                  src="https://i.ibb.co/nPhn4NL/email-g49992216e-1920.jpg"
                   alt=""
                   width="200px"
                   height="200px"
