@@ -4,6 +4,7 @@ import ProjectItem from './ProyectItem'
 import videogamesImg from '../public/assets/proyects/videogames.png';
 import coinPlus from '../public/assets/proyects/coinplus.png';
 import strongCenter from '../public/assets/proyects/strongcenter.png';
+import cineFilm from '../public/assets/proyects/moviesapp.png';
 
 const Proyects = () => {
   return (
@@ -13,6 +14,12 @@ const Proyects = () => {
             <h2 className='py-4'>What I&#39;ve Built </h2>
             <div className='grid md:grid-cols-2 gap-8'>
 
+            <ProjectItem
+            title='Cinefilm'
+            backgroundImg={cineFilm}
+            projectUrl='/cinefilm'
+            tech='React JS, Nextjs 13, Tailwind css'
+          />
             <ProjectItem
             title='Coin+'
             backgroundImg={coinPlus}
