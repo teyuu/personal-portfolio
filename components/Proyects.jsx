@@ -5,6 +5,7 @@ import videogamesImg from '../public/assets/proyects/videogames.png';
 import coinPlus from '../public/assets/proyects/coinplus.png';
 import strongCenter from '../public/assets/proyects/strongcenter.png';
 import cineFilm from '../public/assets/proyects/moviesapp.png';
+import relevamiento from '../public/assets/proyects/app-relevamientos.png';
 
 const Proyects = () => {
   return (
@@ -13,6 +14,13 @@ const Proyects = () => {
             <p className='text-xl tracking-widest uppercase text-[#5651e5]'>Proyects</p>
             <h2 className='py-4'>What I&#39;ve Built </h2>
             <div className='grid md:grid-cols-2 gap-8'>
+
+            <ProjectItem
+            title='Aplicacion Relevamiento de equipos'
+            backgroundImg={relevamiento}
+            projectUrl='/relevamientos'
+            tech='React JS, Redux, Tailwind, Node, Express, Sequelize, MySQL'
+          /> 
 
             <ProjectItem
             title='Cinefilm'
